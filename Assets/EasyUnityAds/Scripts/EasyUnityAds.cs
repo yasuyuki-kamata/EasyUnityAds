@@ -5,9 +5,11 @@ using UnityEngine.Advertisements;
 public class EasyUnityAds : MonoBehaviour
 {
 	[SerializeField]
-	private string gameID_iOS;
+	private string gameID_iOS = "26870";
 	[SerializeField]
-	private string gameID_Android;
+	private string gameID_Android = "26871";
+	[SerializeField]
+	private string zoneID = null;
 
 	void Awake ()
 	{
@@ -31,7 +33,7 @@ public class EasyUnityAds : MonoBehaviour
 	public void ShowUnityAds ()
 	{
 		if (Advertisement.isInitialized) {
-			Advertisement.Show ();
+			Advertisement.Show (zoneID);
 		} else {
 			Debug.LogWarning (string.Format("{0} : not initialized yet!", this.name));
 		}

@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468004}
-  - 114: {fileID: 11410528}
+  - 114: {fileID: 11489268}
   m_Layer: 0
   m_Name: EasyUnityAds
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11410528
+--- !u!114 &11489268
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -41,6 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameID_iOS: 26870
   gameID_Android: 26871
+  zoneID: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

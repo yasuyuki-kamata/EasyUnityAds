@@ -379,7 +379,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2129452795}
+      - m_Target: {fileID: 0}
         m_MethodName: ShowUnityAds
         m_Mode: 1
         m_Arguments:
@@ -525,10 +525,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 132916, guid: 3d955cd4f9d4240499c4c34276880e85, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d955cd4f9d4240499c4c34276880e85, type: 2}
   m_IsPrefabParent: 0
@@ -622,9 +618,3 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!114 &2129452795
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11410528, guid: 3d955cd4f9d4240499c4c34276880e85,
-    type: 2}
-  m_PrefabInternal: {fileID: 2052942386}
-  m_Script: {fileID: 11500000, guid: aa2cb87cdf56d4244afa1908bd9b2674, type: 3}
