@@ -6,12 +6,12 @@ Warning: For just showing video ads. Coding yourself with looking official docum
 
 ## .unitypackage
 
-[EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.0/EasyUnityAds.unitypackage)
+[EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.1/EasyUnityAds.unitypackage)
 
 ## Usage
 
 1. Import [UnityAds](https://www.assetstore.unity3d.com/en/#!/content/21027) from Unity Asset Store
-2. Import [EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.0/EasyUnityAds.unitypackage)
+2. Import [EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.1/EasyUnityAds.unitypackage)
 
   ![ScreenShot 1][ss1]
 
