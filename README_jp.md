@@ -6,12 +6,12 @@ Warning: ただ動画広告を表示させるためだけのものです。も�
 
 ## .unitypackage
 
-[EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.1/EasyUnityAds.unitypackage)
+[EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.2/EasyUnityAds.unitypackage)
 
 ## Usage
 
 1. アセットストアから[UnityAds](https://www.assetstore.unity3d.com/en/#!/content/21027)をインポートします
-2. [EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.1/EasyUnityAds.unitypackage)をインポートします
+2. [EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.2/EasyUnityAds.unitypackage)をインポートします
 
   ![ScreenShot 1][ss1]
 
