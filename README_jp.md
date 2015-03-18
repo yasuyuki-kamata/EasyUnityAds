@@ -4,6 +4,8 @@
 
 Warning: ただ動画広告を表示させるためだけのものです。もっと込み入ったことをやりたい場合は公式ドキュメントを読んで自分でコーディングしてください。
 
+English ver. : [README.md](README.md)
+
 ## .unitypackage
 
 [EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.2/EasyUnityAds.unitypackage)
