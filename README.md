@@ -4,6 +4,8 @@ This is a package for [UnityAds](https://unityads.unity3d.com/) to implement eas
 
 Warning: For just showing video ads. Coding yourself with looking official documents if you'd like to do more.
 
+日本語版：[README_jp.md](README_jp.md)
+
 ## .unitypackage
 
 [EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v1.2/EasyUnityAds.unitypackage)
