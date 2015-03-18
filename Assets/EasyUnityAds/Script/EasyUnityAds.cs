@@ -2,41 +2,44 @@
 using System.Collections;
 using UnityEngine.Advertisements;
 
-public class EasyUnityAds : MonoBehaviour
+namespace EasyUnityAds
 {
-	[SerializeField]
-	private string gameID_iOS;
-	[SerializeField]
-	private string gameID_Android;
-
-	void Awake ()
+	public class EasyUnityAds : MonoBehaviour
 	{
-		if (Advertisement.isSupported) {
-			string gameID;
+		[SerializeField]
+		private string gameID_iOS;
+		[SerializeField]
+		private string gameID_Android;
+
+		void Awake ()
+		{
+			if (Advertisement.isSupported) {
+				string gameID;
 #if (UNITY_EDITOR && UNITY_ANDROID) || UNITY_ANDROID
-			gameID = gameID_Android;
+				gameID = gameID_Android;
 #elif (UNITY_EDITOR && UNITY_IOS) || UNITY_IOS
-			gameID = gameID_iOS;
+				gameID = gameID_iOS;
 #endif
-			if (gameID != "" && gameID != null) {
-				Advertisement.Initialize (gameID);
+				if (gameID != "" && gameID != null) {
+					Advertisement.Initialize (gameID);
+				} else {
+					Debug.LogWarning(string.Format("{0} : Does not set User ID!", this.name));
+				}
 			} else {
-				Debug.LogWarning(string.Format("{0} : Does not set User ID!", this.name));
+				Debug.LogWarning(string.Format("{0} : not supported!", this.name));
 			}
-		} else {
-			Debug.LogWarning(string.Format("{0} : not supported!", this.name));
 		}
-	}
 
-	public void ShowUnityAds ()
-	{
-		if (Advertisement.isInitialized) {
-			Advertisement.Show();
+		public void ShowUnityAds ()
+		{
+			if (Advertisement.isInitialized) {
+				Advertisement.Show();
+			}
 		}
-	}
 
-	public bool IsInitialized ()
-	{
-		return Advertisement.isInitialized;
+		public bool IsInitialized ()
+		{
+			return Advertisement.isInitialized;
+		}
 	}
 }
