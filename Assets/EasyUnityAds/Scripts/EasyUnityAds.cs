@@ -4,12 +4,9 @@ using UnityEngine.Advertisements;
 
 public class EasyUnityAds : MonoBehaviour
 {
-	[SerializeField]
-	private string gameID_iOS = "26870";
-	[SerializeField]
-	private string gameID_Android = "26871";
-	[SerializeField]
-	private string zoneID = null;
+	public string gameID_iOS = "26870";
+	public string gameID_Android = "26871";
+	public string zoneID = null;
 
 	void Awake ()
 	{
