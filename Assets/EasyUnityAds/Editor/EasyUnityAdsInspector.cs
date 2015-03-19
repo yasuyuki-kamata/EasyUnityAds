@@ -6,15 +6,16 @@ using System.Collections;
 public class EasyUnityAdsInspector : Editor
 {
 	private GUIStyle headerGUIStyle = new GUIStyle();
-	private GUILayoutOption headerGUILayout = GUILayout.Height(30f);
+	private GUILayoutOption headerGUILayout = GUILayout.Height(20f);
 
 	public override void OnInspectorGUI ()
 	{
-		headerGUIStyle.fontSize = 20;
+		headerGUIStyle.fontSize = 15;
 		headerGUIStyle.fontStyle = FontStyle.Bold;
 
 		EasyUnityAds easyUnityAds = target as EasyUnityAds;
 
+		EditorGUILayout.Separator ();
 		EditorGUILayout.LabelField ("Game ID", headerGUIStyle, headerGUILayout);
 		EditorGUI.indentLevel++;
 		easyUnityAds.gameID_iOS = EditorGUILayout.TextField ("iOS", easyUnityAds.gameID_iOS);
