@@ -59,9 +59,7 @@ public class EasyUnityAdsWindow : EditorWindow
 		float currentViewWidth = EditorGUIUtility.currentViewWidth;
 		GUI.DrawTexture (new Rect ((currentViewWidth - 276f) / 2, 10f, 276f, 72f), logo);
 			
-		GUILayout.Space (100f);
-
-		GUILayout.Label ("Setting UnityAds");
+		GUILayout.Space (70f);
 
 		GUILayout.Space (20f);
 
@@ -103,8 +101,10 @@ public class EasyUnityAdsWindow : EditorWindow
 	/// </summary>
 	void CreateUnityAdsObject ()
 	{
-		GameObject go = new GameObject ();
-		go.AddComponent<EasyUnityAds> ();
-		go.name = GAMEOBJECT_NAME;
+		if (FindObjectOfType (typeof(EasyUnityAds)) == null) {
+			GameObject go = new GameObject ();
+			go.AddComponent<EasyUnityAds> ();
+			go.name = GAMEOBJECT_NAME;
+		}
 	}
 }
