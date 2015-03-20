@@ -91,9 +91,9 @@ public class EasyUnityAdsWindow : EditorWindow
 			CreateUnityAdsObject ();
 		}
 
-		if (GUILayout.Button (LABEL_CLOSE)) {
-			this.Close ();
-		}
+//		if (GUILayout.Button (LABEL_CLOSE)) {
+//			this.Close ();
+//		}
 	}
 
 	/// <summary>
