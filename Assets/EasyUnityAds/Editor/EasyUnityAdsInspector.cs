@@ -6,8 +6,8 @@ public class EasyUnityAdsInspector : Editor
 {
 	public override void OnInspectorGUI ()
 	{
-		GUILayout.Label ("Press the button if change UnityAds Setting");
-		if (GUILayout.Button ("Open UnityAds Setting")) {
+		GUILayout.Label ("Press the button if you'd like to change the settings");
+		if (GUILayout.Button ("Open EasyUnityAds window")) {
 			EasyUnityAdsWindow.Init ();
 		}
 	}
