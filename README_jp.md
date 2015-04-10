@@ -8,12 +8,12 @@ English：[README.md](README.md)
 
 ## .unitypackage
 
-[EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v2.0.1/EasyUnityAds.unitypackage)
+[EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v2.0.2/EasyUnityAds.unitypackage)
 
 ## Usage
 
 1. アセットストアから[UnityAds](https://www.assetstore.unity3d.com/en/#!/content/21027)をインポートします
-2. [EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v2.0.1/EasyUnityAds.unitypackage)をインポートします
+2. [EasyUnityAds.unitypackage](https://github.com/yasuyuki-kamata/EasyUnityAds/releases/download/v2.0.2/EasyUnityAds.unitypackage)をインポートします
 
   ![ScreenShot 1][ss1]
 
