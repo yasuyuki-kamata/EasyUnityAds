@@ -19,16 +19,18 @@ public class EasyUnityAds : MonoBehaviour
 			Debug.LogWarning ("UnityAds Settings File is null!");
 		}
 
+#if UNITY_ANDROID || UNITY_IOS
 		if (Advertisement.isSupported) {
 			string gameID = GetGameID ();
 			if (!string.IsNullOrEmpty (gameID)) {
 				Advertisement.Initialize (gameID);
 			} else {
-				Debug.LogWarning (string.Format ("{0} : Does not set User ID!", this.name));
+				Debug.LogWarning (string.Format ("{0} : Does not set Game ID!", this.name));
 			}
-		} else {
-			Debug.LogWarning (string.Format ("{0} : not supported!", this.name));
 		}
+#else
+		Debug.LogWarning (string.Format ("{0} : not supported!", this.name));
+#endif
 	}
 
 	/// <summary>
@@ -72,9 +74,9 @@ public class EasyUnityAds : MonoBehaviour
 	private string GetGameID ()
 	{
 		string _gameID = string.Empty;
-#if (UNITY_EDITOR && UNITY_ANDROID) || UNITY_ANDROID
+#if UNITY_ANDROID
 		_gameID = unityAdsSettings.gameID_Android;
-#elif (UNITY_EDITOR && UNITY_IOS) || UNITY_IOS
+#elif UNITY_IOS
 		_gameID = unityAdsSettings.gameID_iOS;
 #endif
 		return _gameID;
