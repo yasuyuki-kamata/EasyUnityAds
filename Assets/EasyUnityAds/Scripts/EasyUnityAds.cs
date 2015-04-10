@@ -71,7 +71,7 @@ public class EasyUnityAds : MonoBehaviour
 	/// <returns>gameID</returns>
 	private string GetGameID ()
 	{
-		string _gameID;
+		string _gameID = string.Empty;
 #if (UNITY_EDITOR && UNITY_ANDROID) || UNITY_ANDROID
 		_gameID = unityAdsSettings.gameID_Android;
 #elif (UNITY_EDITOR && UNITY_IOS) || UNITY_IOS
