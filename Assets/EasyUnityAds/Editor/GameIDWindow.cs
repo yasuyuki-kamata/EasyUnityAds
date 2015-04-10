@@ -7,7 +7,6 @@ public class GameIDWindow : EditorWindow
 	private GUIStyle headerGUIStyle = new GUIStyle();
 	private Texture2D texture;
 
-	[MenuItem ("Window/Where is Game ID?")]
 	public static void Init ()
 	{
 		GameIDWindow window = (GameIDWindow)EditorWindow.GetWindow<GameIDWindow> ();
@@ -25,7 +24,7 @@ public class GameIDWindow : EditorWindow
 
 	void OnGUI ()
 	{
-		GUILayout.Label ("Where is Game ID?", headerGUIStyle);
+		GUILayout.Label ("What is Game ID?", headerGUIStyle);
 		EditorGUI.DrawPreviewTexture (new Rect (0, 30f, EditorGUIUtility.currentViewWidth, 218f), texture, null, ScaleMode.ScaleToFit,  967/218);
 	}
 }

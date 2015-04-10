@@ -25,3 +25,6 @@ sysinfo.txt
 # UnityAds.unitypackage
 Plugins/
 Standard Assets/
+
+# UnityAdsSettings.asset (ScriptableObject)
+UnityAdsSettings.asset*

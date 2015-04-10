@@ -24,7 +24,7 @@ public class ZoneIDWindow : EditorWindow
 	
 	void OnGUI ()
 	{
-		GUILayout.Label ("Where is Zone ID?", headerGUIStyle);
+		GUILayout.Label ("What is Zone ID?", headerGUIStyle);
 		EditorGUILayout.Separator ();
 		EditorGUILayout.BeginHorizontal ();
 		EditorGUILayout.SelectableLabel ("defaultVideoAndPictureZone");
